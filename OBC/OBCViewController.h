@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OBCViewController : UIViewController
+@interface OBCViewController : UIViewController {
+    IBOutlet UILabel *labelConsideration;
+    IBOutlet UILabel *labelHaveYouConsidered;
+    IBOutlet UIButton *buttonYes;
+    IBOutlet UIButton *buttonNo;
+}
+
+- (IBAction)yesPressed;
+- (IBAction)noPressed;
+- (void)fadeIn;
+- (void)fadeOut;
 
 @end
