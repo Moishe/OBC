@@ -72,19 +72,6 @@
             <point key="canvasLocation" x="46" y="79"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="OBCViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OBCViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="noPressed"/>
-                <relationship kind="action" name="yesPressed"/>
-                <relationship kind="outlet" name="buttonNo" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="buttonYes" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="labelConsideration" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="labelHaveYouConsidered" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
