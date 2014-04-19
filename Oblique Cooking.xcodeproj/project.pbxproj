@@ -22,6 +22,8 @@
 		85887C1D1902E9BF000710FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85887BFC1902E9BF000710FA /* UIKit.framework */; };
 		85887C251902E9BF000710FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85887C231902E9BF000710FA /* InfoPlist.strings */; };
 		85887C271902E9BF000710FA /* Oblique_CookingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85887C261902E9BF000710FA /* Oblique_CookingTests.m */; };
+		85887C351902EF14000710FA /* obcHYCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85887C341902EF14000710FA /* obcHYCViewController.m */; };
+		85887C381902F15E000710FA /* obcGMOHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85887C371902F15E000710FA /* obcGMOHViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		85887C221902E9BF000710FA /* Oblique CookingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Oblique CookingTests-Info.plist"; sourceTree = "<group>"; };
 		85887C241902E9BF000710FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85887C261902E9BF000710FA /* Oblique_CookingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Oblique_CookingTests.m; sourceTree = "<group>"; };
+		85887C331902EF14000710FA /* obcHYCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obcHYCViewController.h; sourceTree = "<group>"; };
+		85887C341902EF14000710FA /* obcHYCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = obcHYCViewController.m; sourceTree = "<group>"; };
+		85887C361902F15E000710FA /* obcGMOHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obcGMOHViewController.h; sourceTree = "<group>"; };
+		85887C371902F15E000710FA /* obcGMOHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = obcGMOHViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,10 @@
 				85887C111902E9BF000710FA /* obcViewController.m */,
 				85887C131902E9BF000710FA /* Images.xcassets */,
 				85887BFF1902E9BF000710FA /* Supporting Files */,
+				85887C331902EF14000710FA /* obcHYCViewController.h */,
+				85887C341902EF14000710FA /* obcHYCViewController.m */,
+				85887C361902F15E000710FA /* obcGMOHViewController.h */,
+				85887C371902F15E000710FA /* obcGMOHViewController.m */,
 			);
 			path = "Oblique Cooking";
 			sourceTree = "<group>";
@@ -254,6 +264,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85887C351902EF14000710FA /* obcHYCViewController.m in Sources */,
+				85887C381902F15E000710FA /* obcGMOHViewController.m in Sources */,
 				85887C121902E9BF000710FA /* obcViewController.m in Sources */,
 				85887C051902E9BF000710FA /* main.m in Sources */,
 				85887C091902E9BF000710FA /* obcAppDelegate.m in Sources */,
