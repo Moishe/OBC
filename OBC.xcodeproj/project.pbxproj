@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E55E5F6186D07D20088A10B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E55E5F5186D07D20088A10B /* UIKit.framework */; };
+		5E55E5F8186D07D20088A10B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E55E5F7186D07D20088A10B /* Foundation.framework */; };
+		5E55E5FA186D07D20088A10B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E55E5F9186D07D20088A10B /* CoreGraphics.framework */; };
+		5E55E600186D07D20088A10B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E55E5FE186D07D20088A10B /* InfoPlist.strings */; };
+		5E55E602186D07D20088A10B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E55E601186D07D20088A10B /* main.m */; };
+		5E55E606186D07D20088A10B /* OBCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E55E605186D07D20088A10B /* OBCAppDelegate.m */; };
+		5E55E609186D07D20088A10B /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E55E607186D07D20088A10B /* MainStoryboard_iPhone.storyboard */; };
+		5E55E60C186D07D20088A10B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E55E60A186D07D20088A10B /* MainStoryboard_iPad.storyboard */; };
+		5E55E60F186D07D20088A10B /* OBCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E55E60E186D07D20088A10B /* OBCViewController.m */; };
+		5E55E617186D07D20088A10B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E55E616186D07D20088A10B /* SenTestingKit.framework */; };
+		5E55E618186D07D20088A10B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E55E5F5186D07D20088A10B /* UIKit.framework */; };
+		5E55E619186D07D20088A10B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E55E5F7186D07D20088A10B /* Foundation.framework */; };
+		5E55E621186D07D20088A10B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E55E61F186D07D20088A10B /* InfoPlist.strings */; };
+		5E55E624186D07D20088A10B /* OBCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E55E623186D07D20088A10B /* OBCTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E55E61A186D07D20088A10B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E55E5E8186D07D10088A10B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E55E5F0186D07D10088A10B;
+			remoteInfo = OBC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5E55E5F1186D07D20088A10B /* OBC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E55E5F5186D07D20088A10B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5E55E5F7186D07D20088A10B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E55E5F9186D07D20088A10B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5E55E5FD186D07D20088A10B /* OBC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OBC-Info.plist"; sourceTree = "<group>"; };
+		5E55E5FF186D07D20088A10B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E55E601186D07D20088A10B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E55E603186D07D20088A10B /* OBC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OBC-Prefix.pch"; sourceTree = "<group>"; };
+		5E55E604186D07D20088A10B /* OBCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBCAppDelegate.h; sourceTree = "<group>"; };
+		5E55E605186D07D20088A10B /* OBCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBCAppDelegate.m; sourceTree = "<group>"; };
+		5E55E608186D07D20088A10B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		5E55E60B186D07D20088A10B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		5E55E60D186D07D20088A10B /* OBCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBCViewController.h; sourceTree = "<group>"; };
+		5E55E60E186D07D20088A10B /* OBCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBCViewController.m; sourceTree = "<group>"; };
+		5E55E615186D07D20088A10B /* OBCTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBCTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E55E616186D07D20088A10B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5E55E61E186D07D20088A10B /* OBCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OBCTests-Info.plist"; sourceTree = "<group>"; };
+		5E55E620186D07D20088A10B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5E55E622186D07D20088A10B /* OBCTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBCTests.h; sourceTree = "<group>"; };
+		5E55E623186D07D20088A10B /* OBCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBCTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E55E5EE186D07D10088A10B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E55E5F6186D07D20088A10B /* UIKit.framework in Frameworks */,
+				5E55E5F8186D07D20088A10B /* Foundation.framework in Frameworks */,
+				5E55E5FA186D07D20088A10B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E55E611186D07D20088A10B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E55E617186D07D20088A10B /* SenTestingKit.framework in Frameworks */,
+				5E55E618186D07D20088A10B /* UIKit.framework in Frameworks */,
+				5E55E619186D07D20088A10B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E55E5E6186D07D10088A10B = {
+			isa = PBXGroup;
+			children = (
+				5E55E5FB186D07D20088A10B /* OBC */,
+				5E55E61C186D07D20088A10B /* OBCTests */,
+				5E55E5F4186D07D20088A10B /* Frameworks */,
+				5E55E5F2186D07D20088A10B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E55E5F2186D07D20088A10B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E55E5F1186D07D20088A10B /* OBC.app */,
+				5E55E615186D07D20088A10B /* OBCTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E55E5F4186D07D20088A10B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E55E5F5186D07D20088A10B /* UIKit.framework */,
+				5E55E5F7186D07D20088A10B /* Foundation.framework */,
+				5E55E5F9186D07D20088A10B /* CoreGraphics.framework */,
+				5E55E616186D07D20088A10B /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E55E5FB186D07D20088A10B /* OBC */ = {
+			isa = PBXGroup;
+			children = (
+				5E55E604186D07D20088A10B /* OBCAppDelegate.h */,
+				5E55E605186D07D20088A10B /* OBCAppDelegate.m */,
+				5E55E607186D07D20088A10B /* MainStoryboard_iPhone.storyboard */,
+				5E55E60A186D07D20088A10B /* MainStoryboard_iPad.storyboard */,
+				5E55E60D186D07D20088A10B /* OBCViewController.h */,
+				5E55E60E186D07D20088A10B /* OBCViewController.m */,
+				5E55E5FC186D07D20088A10B /* Supporting Files */,
+			);
+			path = OBC;
+			sourceTree = "<group>";
+		};
+		5E55E5FC186D07D20088A10B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E55E5FD186D07D20088A10B /* OBC-Info.plist */,
+				5E55E5FE186D07D20088A10B /* InfoPlist.strings */,
+				5E55E601186D07D20088A10B /* main.m */,
+				5E55E603186D07D20088A10B /* OBC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E55E61C186D07D20088A10B /* OBCTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E55E622186D07D20088A10B /* OBCTests.h */,
+				5E55E623186D07D20088A10B /* OBCTests.m */,
+				5E55E61D186D07D20088A10B /* Supporting Files */,
+			);
+			path = OBCTests;
+			sourceTree = "<group>";
+		};
+		5E55E61D186D07D20088A10B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E55E61E186D07D20088A10B /* OBCTests-Info.plist */,
+				5E55E61F186D07D20088A10B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E55E5F0186D07D10088A10B /* OBC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E55E627186D07D20088A10B /* Build configuration list for PBXNativeTarget "OBC" */;
+			buildPhases = (
+				5E55E5ED186D07D10088A10B /* Sources */,
+				5E55E5EE186D07D10088A10B /* Frameworks */,
+				5E55E5EF186D07D10088A10B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OBC;
+			productName = OBC;
+			productReference = 5E55E5F1186D07D20088A10B /* OBC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E55E614186D07D20088A10B /* OBCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E55E62A186D07D20088A10B /* Build configuration list for PBXNativeTarget "OBCTests" */;
+			buildPhases = (
+				5E55E610186D07D20088A10B /* Sources */,
+				5E55E611186D07D20088A10B /* Frameworks */,
+				5E55E612186D07D20088A10B /* Resources */,
+				5E55E613186D07D20088A10B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E55E61B186D07D20088A10B /* PBXTargetDependency */,
+			);
+			name = OBCTests;
+			productName = OBCTests;
+			productReference = 5E55E615186D07D20088A10B /* OBCTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E55E5E8186D07D10088A10B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OBC;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Moishe Lettvin";
+			};
+			buildConfigurationList = 5E55E5EB186D07D10088A10B /* Build configuration list for PBXProject "OBC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5E55E5E6186D07D10088A10B;
+			productRefGroup = 5E55E5F2186D07D20088A10B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E55E5F0186D07D10088A10B /* OBC */,
+				5E55E614186D07D20088A10B /* OBCTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E55E5EF186D07D10088A10B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E55E600186D07D20088A10B /* InfoPlist.strings in Resources */,
+				5E55E609186D07D20088A10B /* MainStoryboard_iPhone.storyboard in Resources */,
+				5E55E60C186D07D20088A10B /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E55E612186D07D20088A10B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E55E621186D07D20088A10B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E55E613186D07D20088A10B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E55E5ED186D07D10088A10B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E55E602186D07D20088A10B /* main.m in Sources */,
+				5E55E606186D07D20088A10B /* OBCAppDelegate.m in Sources */,
+				5E55E60F186D07D20088A10B /* OBCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E55E610186D07D20088A10B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E55E624186D07D20088A10B /* OBCTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E55E61B186D07D20088A10B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E55E5F0186D07D10088A10B /* OBC */;
+			targetProxy = 5E55E61A186D07D20088A10B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E55E5FE186D07D20088A10B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E55E5FF186D07D20088A10B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5E55E607186D07D20088A10B /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E55E608186D07D20088A10B /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5E55E60A186D07D20088A10B /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E55E60B186D07D20088A10B /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		5E55E61F186D07D20088A10B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E55E620186D07D20088A10B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E55E625186D07D20088A10B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E55E626186D07D20088A10B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E55E628186D07D20088A10B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OBC/OBC-Prefix.pch";
+				INFOPLIST_FILE = "OBC/OBC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5E55E629186D07D20088A10B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OBC/OBC-Prefix.pch";
+				INFOPLIST_FILE = "OBC/OBC-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5E55E62B186D07D20088A10B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OBC.app/OBC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OBC/OBC-Prefix.pch";
+				INFOPLIST_FILE = "OBCTests/OBCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5E55E62C186D07D20088A10B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OBC.app/OBC";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OBC/OBC-Prefix.pch";
+				INFOPLIST_FILE = "OBCTests/OBCTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E55E5EB186D07D10088A10B /* Build configuration list for PBXProject "OBC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E55E625186D07D20088A10B /* Debug */,
+				5E55E626186D07D20088A10B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E55E627186D07D20088A10B /* Build configuration list for PBXNativeTarget "OBC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E55E628186D07D20088A10B /* Debug */,
+				5E55E629186D07D20088A10B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5E55E62A186D07D20088A10B /* Build configuration list for PBXNativeTarget "OBCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E55E62B186D07D20088A10B /* Debug */,
+				5E55E62C186D07D20088A10B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E55E5E8186D07D10088A10B /* Project object */;
+}
