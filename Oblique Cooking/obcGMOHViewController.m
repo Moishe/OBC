@@ -35,6 +35,13 @@
     labelDescription.lineBreakMode = NSLineBreakByWordWrapping;
     labelDescription.numberOfLines = 0;
     
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"vegas"] ofType:@"jpg"];
+    UIImage *image = [UIImage imageWithContentsOfFile:filePath];
+    imageView.alpha = 0.4;
+    imageView.backgroundColor = [UIColor blackColor];
+    imageView.clipsToBounds = YES;
+    imageView.image = image;
+    
     [self showMeal];
 }
 

@@ -24,6 +24,8 @@
 		85887C271902E9BF000710FA /* Oblique_CookingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85887C261902E9BF000710FA /* Oblique_CookingTests.m */; };
 		85887C351902EF14000710FA /* obcHYCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85887C341902EF14000710FA /* obcHYCViewController.m */; };
 		85887C381902F15E000710FA /* obcGMOHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85887C371902F15E000710FA /* obcGMOHViewController.m */; };
+		85887C3A1902FE80000710FA /* arctic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85887C391902FE80000710FA /* arctic.jpg */; };
+		85887C3C19030076000710FA /* vegas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85887C3B19030076000710FA /* vegas.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		85887C341902EF14000710FA /* obcHYCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = obcHYCViewController.m; sourceTree = "<group>"; };
 		85887C361902F15E000710FA /* obcGMOHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obcGMOHViewController.h; sourceTree = "<group>"; };
 		85887C371902F15E000710FA /* obcGMOHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = obcGMOHViewController.m; sourceTree = "<group>"; };
+		85887C391902FE80000710FA /* arctic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arctic.jpg; sourceTree = "<group>"; };
+		85887C3B19030076000710FA /* vegas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegas.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 		85887BFF1902E9BF000710FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				85887C3B19030076000710FA /* vegas.jpg */,
+				85887C391902FE80000710FA /* arctic.jpg */,
 				85887C001902E9BF000710FA /* Oblique Cooking-Info.plist */,
 				85887C011902E9BF000710FA /* InfoPlist.strings */,
 				85887C041902E9BF000710FA /* main.m */,
@@ -245,6 +251,8 @@
 				85887C0F1902E9BF000710FA /* Main_iPad.storyboard in Resources */,
 				85887C141902E9BF000710FA /* Images.xcassets in Resources */,
 				85887C0C1902E9BF000710FA /* Main_iPhone.storyboard in Resources */,
+				85887C3A1902FE80000710FA /* arctic.jpg in Resources */,
+				85887C3C19030076000710FA /* vegas.jpg in Resources */,
 				85887C031902E9BF000710FA /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,6 +11,7 @@
 @interface obcGMOHViewController : UIViewController {
     IBOutlet UILabel *labelDescription;
     IBOutlet UILabel *labelMealList;
+    IBOutlet UIImageView *imageView;
 }
 
 @end
