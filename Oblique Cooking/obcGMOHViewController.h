@@ -12,6 +12,8 @@
     IBOutlet UILabel *labelMealList;
     IBOutlet UILabel *labelDate;
     IBOutlet UIImageView *imageView;
+    
+    NSInteger index;
 }
 
 @property (assign, nonatomic) NSInteger index;
