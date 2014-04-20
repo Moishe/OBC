@@ -16,6 +16,8 @@
     NSInteger index;
 }
 
+- (void)placeLabel:(CGRect *)rect labelText:(NSString *)labelText bottom:(BOOL)bottom;
+
 @property (assign, nonatomic) NSInteger index;
 
 @end

@@ -437,38 +437,43 @@
     NSUInteger randomIndex = arc4random() % [mealDescriptions count];
     
     CGRect labelFrame = CGRectMake(25, 109, 270, 140);
-    UILabel *labelDescription = [[UILabel alloc] initWithFrame:labelFrame];
     NSString *labelText = [mealDescriptions objectAtIndex:randomIndex];
-    [labelDescription setFont:[UIFont fontWithName:@"HoeflerText-Regular" size:15.0f]];
+    [self placeLabel:&labelFrame labelText:labelText fontName:@"HoeflerText-Regular" bottom:false];
+    
+    labelDate.text = [dates objectAtIndex:randomIndex];
+    
+    [self placeLabel:&labelFrame labelText:[mealLists objectAtIndex:randomIndex] fontName:@"HoeflerText-Italic" bottom:true];
+}
+
+- (void)placeLabel:(CGRect *)rect labelText:(NSString *)labelText fontName:(NSString *)fontName bottom:(BOOL)bottom {
+    UILabel *labelDescription = [[UILabel alloc] initWithFrame:*rect];
+    [labelDescription setFont:[UIFont fontWithName:fontName size:15.0f]];
     NSInteger strLength = [labelText length];
     NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
     [style setLineSpacing:4];
     NSMutableAttributedString *descriptionString = [[NSMutableAttributedString alloc] initWithString:labelText];
     [descriptionString addAttribute:NSParagraphStyleAttributeName
-                      value:style
-                      range:NSMakeRange(0, strLength)];
+                              value:style
+                              range:NSMakeRange(0, strLength)];
     [labelDescription setAttributedText:descriptionString];
     
     // Tell the label to use an unlimited number of lines
     labelDescription.textAlignment = UITextAlignmentCenter;
     [labelDescription setNumberOfLines:0];
     [labelDescription sizeToFit];
-    
     CGRect myFrame = labelDescription.frame;
     myFrame = CGRectMake(myFrame.origin.x, myFrame.origin.y, 270, myFrame.size.height);
     labelDescription.frame = myFrame;
-    
     [self.view addSubview:labelDescription];
     
-    labelDate.text = [dates objectAtIndex:randomIndex];
-    labelMealList.text = [mealLists objectAtIndex:randomIndex];
-    CGSize fontSize = [labelMealList.text sizeWithFont:labelMealList.font];
-    double finalHeight = fontSize.height * labelMealList.numberOfLines;
-    double finalWidth = labelMealList.frame.size.width;    //expected width of label
-    CGSize theStringSize = [labelMealList.text sizeWithFont:labelMealList.font constrainedToSize:CGSizeMake(finalWidth, finalHeight) lineBreakMode:labelMealList.lineBreakMode];
-    int newLinesToPad = (finalHeight  - theStringSize.height) / fontSize.height;
-    for(int i=0; i<newLinesToPad; i++)
-        labelMealList.text = [NSString stringWithFormat:@" \n%@", labelMealList.text];}
+    if (bottom) {
+        CGFloat margin = 25;
+        CGRect buttonFrame = labelDescription.frame;
+        buttonFrame.origin.y = self.view.bounds.size.height - buttonFrame.size.height - margin;
+        labelDescription.frame = buttonFrame;
+    }
+
+}
 
 /*
 #pragma mark - Navigation
