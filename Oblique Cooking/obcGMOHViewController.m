@@ -55,8 +55,7 @@
 
 - (void)showMeal
 {
-    NSUInteger randomIndex = 0; //(arc4random() % 18) + 1;
-    randomIndex = pictureIndex++ % 18 + 1;
+    NSUInteger randomIndex = (arc4random() % 18) + 1;
     NSString *name = [NSString stringWithFormat:@"%lu", (unsigned long)randomIndex];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:name ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:filePath];
@@ -138,7 +137,7 @@
                                   @"Late night dinner, where we discovered how far we would go to avoid loneliness. Portland, OR.",
                                   @"After spending the day plowing potato fields with visions of a pulp fiction future, Philo Farnsworth sat down for supper. Rigby, ID.",
                                   @"Cocktail hour high up in the Sierras, after getting the minivan stuck in the snow in a geographically impressive manner, which lead directly to the discovery of the snow's prime suitability as cocktail ice. Near Porterville, CA.",
-                                  @"Accidental and surprise dinner with my crush of many years, whose mere attention was a precious gemstone, even though I had to take cold medicine just to keep it together, at a restaurant so well put together that after the meal was over, a large cart was wheeled over and we were asked to select homemade versions of famous American candies to take home, and it ended later that night with a kiss, the only one we ever had. San Francisco, CA.",
+                                  @"Accidental and surprise dinner with my crush of many years, whose mere glance was a precious gemstone, even though I had to take cold medicine just to keep it together, at a restaurant so well put together that after the meal was over, a large cart was wheeled over and we were asked to select homemade versions of famous American candies to take home, and it ended later that night with a kiss, our only one. San Francisco, CA.",
                                   @"Takeout festival, after a long and bewitching day searching for the camera obscura with one serious and nearly somnambulant impairment. San Francisco, CA.",
                                   @"Backyard dinner, where I felt how different definitions of success can impair or enrich lives. Washington, DC.",
                                   @"Brunch where the lines between fruits were obscured, but the relationship between all things deepened. Near Sarlat, FR.",
@@ -389,7 +388,7 @@
                            @"Takeout of smoked beef brisket, green chile macaroni and cheese, and iceberg wedge salad with blue cheese dressing and bacon ",
                            @"Fried eggs, biscuits and butter, instant coffee ",
                            @"Ham, popcorn, serendipitously discovered 30-year old rye whiskey ",
-                           @"The Last Word; asparagus, osetra caviar, lemon, and pine nut crumble; sunchoke soup, abalone, chickweed; hamachi sashimi, blood orange; red snapper, Dungeness crab rice, lobster & lemon emulsion; grilled Maine lobster heart of palm, blood orange, cilantro; squab breast potato-dandelion purée, sherry glazed shallot, broccoli; champagne granité kumquat marmalade, honey, thyme; and candies to go ",
+                           @"The Last Word; asparagus, osetra caviar, lemon, and pine nut crumble; various sashimi, blood orange; grilled Maine lobster, blood orange; squab breast potato-dandelion purée; champagne granité kumquat marmalade, honey, thyme; and candies to go ",
                            @"Wood-fired pepperoni pizza, chicken korma, noodle bowl with pork and shrimp, bacon cheeseburger with french fries, one bottle Dubel, one bottle La Fin du Monde ",
                            @"Grilled bratwurst, potato salad, Heineken",
                            @"Drip coffee, warm baguettes with mirabelle plum preserves, hard-boiled eggs, smoked bacon",
@@ -440,8 +439,7 @@
                            @"Fried artichoke hearts, sweet and sour rice, ginger carrot soup"
                            ];
     
-    //randomIndex = arc4random() % [mealDescriptions count];
-    randomIndex = mealIndex++ % [mealDescriptions count];
+    randomIndex = arc4random() % [mealDescriptions count];
     NSString *labelText = [mealDescriptions objectAtIndex:randomIndex];
     
     CGRect labelFrame = CGRectMake(25, 109, 270, 140);
