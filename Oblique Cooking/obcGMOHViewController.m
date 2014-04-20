@@ -26,16 +26,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     labelMealList.textAlignment = NSTextAlignmentCenter;
     labelMealList.lineBreakMode = NSLineBreakByWordWrapping;
     labelMealList.numberOfLines = 0;
-
-    labelDescription.textAlignment = NSTextAlignmentCenter;
-    labelDescription.lineBreakMode = NSLineBreakByWordWrapping;
-    labelDescription.numberOfLines = 0;
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"vegas"] ofType:@"jpg"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"arctic"] ofType:@"jpg"];
     UIImage *image = [UIImage imageWithContentsOfFile:filePath];
     imageView.alpha = 0.4;
     imageView.backgroundColor = [UIColor blackColor];
@@ -43,6 +40,10 @@
     imageView.image = image;
     
     [self showMeal];
+}
+
+- (void)refresh:(UIRefreshControl *)refreshControl {
+    [refreshControl endRefreshing];
 }
 
 - (void)didReceiveMemoryWarning
@@ -179,14 +180,163 @@
                                   @"The manuscript hints at the possibilities.",
                                   @"The melody is strong and centered, but the dissonance reveals a jungle surrounding us."];
     
+    NSArray *dates = @[@"1793",
+                       @"1857",
+                       @"1863",
+                       @"1945",
+                       @"2004",
+                       @"1961",
+                       @"1985",
+                       @"2000",
+                       @"1952",
+                       @"1966",
+                       @"1937",
+                       @"1994",
+                       @"1992",
+                       @"1587",
+                       @"2012",
+                       @"2010",
+                       @"2014",
+                       @"1983",
+                       @"1985",
+                       @"2010",
+                       @"1637",
+                       @"2009",
+                       @"1993",
+                       @"2006",
+                       @"2010",
+                       @"1993",
+                       @"2010",
+                       @"1998",
+                       @"2000",
+                       @"2000",
+                       @"1998",
+                       @"2008",
+                       @"2007",
+                       @"1998",
+                       @"1994",
+                       @"1641",
+                       @"1999",
+                       @"1998",
+                       @"1998",
+                       @"2004",
+                       @"1991",
+                       @"2009",
+                       @"2008",
+                       @"2007",
+                       @"2008",
+                       @"2012",
+                       @"2008",
+                       @"2007",
+                       @"2007",
+                       @"2007",
+                       @"2012",
+                       @"2002",
+                       @"2008",
+                       @"2001",
+                       @"2013",
+                       @"2013",
+                       @"1984",
+                       @"1995",
+                       @"1990s",
+                       @"2006",
+                       @"2013",
+                       @"2007",
+                       @"1642",
+                       @"2012",
+                       @"2007",
+                       @"1999",
+                       @"2010",
+                       @"2007",
+                       @"2006",
+                       @"2010",
+                       @"2011",
+                       @"2000",
+                       @"2011",
+                       @"1919",
+                       @"2012",
+                       @"2010",
+                       @"2008",
+                       @"2008",
+                       @"2007",
+                       @"1996",
+                       @"2006",
+                       @"2014",
+                       @"2003",
+                       @"2003",
+                       @"2001",
+                       @"1998",
+                       @"2005",
+                       @"2005",
+                       @"2000",
+                       @"1998",
+                       @"2005",
+                       @"2008",
+                       @"1989",
+                       @"1997",
+                       @"1987",
+                       @"1986",
+                       @"2004",
+                       @"2004",
+                       @"2011",
+                       @"2008",
+                       @"2003",
+                       @"2002",
+                       @"1999",
+                       @"2010",
+                       @"2012",
+                       @"2010",
+                       @"2000",
+                       @"2005",
+                       @"2004",
+                       @"2008",
+                       @"2007",
+                       @"2007",
+                       @"2007",
+                       @"2006",
+                       @"2013",
+                       @"2013",
+                       @"2000",
+                       @"2010",
+                       @"2009",
+                       @"2011",
+                       @"1998",
+                       @"2007",
+                       @"1994",
+                       @"2014"];
+    
     NSArray *mealLists = @[
                            @"Good bread, raw milk butter, Pape Clement bordeaux."
                            ];
     
     NSUInteger randomIndex = arc4random() % [mealDescriptions count];
-    labelDescription.text = [mealDescriptions objectAtIndex:randomIndex];
+    
+    CGRect labelFrame = CGRectMake(25, 109, 280, 140);
+    UILabel *myLabel = [[UILabel alloc] initWithFrame:labelFrame];
+    
+    NSString *labelText = [mealDescriptions objectAtIndex:randomIndex];
+    [myLabel setText:labelText];
+    
+    // Tell the label to use an unlimited number of lines
+    myLabel.textAlignment = UITextAlignmentCenter;
+    [myLabel setNumberOfLines:0];
+    [myLabel sizeToFit];
+    
+    CGRect myFrame = myLabel.frame;
+    myFrame = CGRectMake(myFrame.origin.x, myFrame.origin.y, 280, myFrame.size.height);
+    myLabel.frame = myFrame;
+    
+    [self.view addSubview:myLabel];
+    
+    labelDate.text = [dates objectAtIndex:randomIndex];
     labelMealList.text = [mealLists objectAtIndex:0];
-}
+    CGSize fontSize = [labelMealList.text sizeWithFont:labelMealList.font];
+    double finalHeight = fontSize.height * labelMealList.numberOfLines;
+    double finalWidth = labelMealList.frame.size.width;    //expected width of label
+    CGSize theStringSize = [labelMealList.text sizeWithFont:labelMealList.font constrainedToSize:CGSizeMake(finalWidth, finalHeight) lineBreakMode:labelMealList.lineBreakMode];
+    int newLinesToPad = (finalHeight  - theStringSize.height) / fontSize.height;
+    for(int i=0; i<newLinesToPad; i++)
+        labelMealList.text = [NSString stringWithFormat:@" \n%@", labelMealList.text];}
 
 /*
 #pragma mark - Navigation

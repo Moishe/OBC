@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface obcGMOHViewController : UIViewController {
-    IBOutlet UILabel *labelDescription;
     IBOutlet UILabel *labelMealList;
+    IBOutlet UILabel *labelDate;
     IBOutlet UIImageView *imageView;
 }
 

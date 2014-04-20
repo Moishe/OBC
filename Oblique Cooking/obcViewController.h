@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface obcViewController : UIViewController
+@interface obcViewController : UIViewController {
+    IBOutlet UIImageView *imageView;
+}
 
 @end
