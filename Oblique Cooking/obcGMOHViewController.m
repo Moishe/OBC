@@ -436,22 +436,29 @@
     
     NSUInteger randomIndex = arc4random() % [mealDescriptions count];
     
-    CGRect labelFrame = CGRectMake(25, 109, 280, 140);
-    UILabel *myLabel = [[UILabel alloc] initWithFrame:labelFrame];
-    
+    CGRect labelFrame = CGRectMake(25, 109, 270, 140);
+    UILabel *labelDescription = [[UILabel alloc] initWithFrame:labelFrame];
     NSString *labelText = [mealDescriptions objectAtIndex:randomIndex];
-    [myLabel setText:labelText];
+    [labelDescription setFont:[UIFont fontWithName:@"HoeflerText-Regular" size:15.0f]];
+    NSInteger strLength = [labelText length];
+    NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
+    [style setLineSpacing:4];
+    NSMutableAttributedString *descriptionString = [[NSMutableAttributedString alloc] initWithString:labelText];
+    [descriptionString addAttribute:NSParagraphStyleAttributeName
+                      value:style
+                      range:NSMakeRange(0, strLength)];
+    [labelDescription setAttributedText:descriptionString];
     
     // Tell the label to use an unlimited number of lines
-    myLabel.textAlignment = UITextAlignmentCenter;
-    [myLabel setNumberOfLines:0];
-    [myLabel sizeToFit];
+    labelDescription.textAlignment = UITextAlignmentCenter;
+    [labelDescription setNumberOfLines:0];
+    [labelDescription sizeToFit];
     
-    CGRect myFrame = myLabel.frame;
-    myFrame = CGRectMake(myFrame.origin.x, myFrame.origin.y, 280, myFrame.size.height);
-    myLabel.frame = myFrame;
+    CGRect myFrame = labelDescription.frame;
+    myFrame = CGRectMake(myFrame.origin.x, myFrame.origin.y, 270, myFrame.size.height);
+    labelDescription.frame = myFrame;
     
-    [self.view addSubview:myLabel];
+    [self.view addSubview:labelDescription];
     
     labelDate.text = [dates objectAtIndex:randomIndex];
     labelMealList.text = [mealLists objectAtIndex:randomIndex];

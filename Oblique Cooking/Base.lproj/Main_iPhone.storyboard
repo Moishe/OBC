@@ -13,47 +13,80 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iM5-D7-kzN">
-                                <rect key="frame" x="20" y="72" width="280" height="388"/>
+                                <rect key="frame" x="20" y="72" width="280" height="476"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-S6-wpW">
-                                <rect key="frame" x="86" y="209" width="158" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-S6-wpW">
+                                <rect key="frame" x="71" y="150" width="178" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Have you considered...">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Have you considered...">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="HoeflerText-Regular"/>
+                                                <font key="NSOriginalFont" size="15" name="HoeflerText-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <segue destination="772-PP-xdd" kind="push" id="lhn-kJ-gGK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zk7-zf-b8a">
-                                <rect key="frame" x="83" y="281" width="154" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zk7-zf-b8a">
+                                <rect key="frame" x="83" y="226" width="154" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Great Meals of History">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Great Meals of History">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="HoeflerText-Regular"/>
+                                                <font key="NSOriginalFont" size="15" name="HoeflerText-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <segue destination="bL6-hh-hJ3" kind="push" id="Tqj-t3-dCA"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JOp-M6-sQp">
-                                <rect key="frame" x="58" y="86" width="215" height="21"/>
+                                <rect key="frame" x="53" y="86" width="215" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Obliquely Strategic Cooking">
                                         <attributes>
                                             <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <font key="NSFont" size="17" name="HoeflerText-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x1D-HN-StH">
+                                <rect key="frame" x="20" y="518" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.2828882533" green="0.2818977365" blue="0.3774414062" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Credits">
+                                            <attributes>
+                                                <font key="NSFont" size="11" name="HoeflerText-Regular"/>
+                                                <font key="NSOriginalFont" size="11" name="HoeflerText-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="1bo-m3-knh" kind="push" id="3Xb-tB-95U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -66,6 +99,41 @@
             </objects>
             <point key="canvasLocation" x="343" y="85"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="IwO-GB-jO2">
+            <objects>
+                <viewController id="1bo-m3-knh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZwP-wT-Ldt"/>
+                        <viewControllerLayoutGuide type="bottom" id="ieE-rw-Ghc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q9Q-Ff-lmU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G9J-az-la5">
+                                <rect key="frame" x="20" y="66" width="280" height="394"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HoeflerText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xtJ-RW-us7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jGm-Kw-ihV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="407"/>
+        </scene>
         <!--ObcGMOH View Controller-->
         <scene sceneID="6U1-dR-hPn">
             <objects>
@@ -75,24 +143,40 @@
                         <viewControllerLayoutGuide type="bottom" id="biO-HK-Chf"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BlH-71-FMF">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dx8-9Y-0hf">
-                                <rect key="frame" x="20" y="72" width="280" height="388"/>
+                                <rect key="frame" x="20" y="72" width="280" height="476"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meal Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stg-pU-O9Y">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stg-pU-O9Y">
                                 <rect key="frame" x="20" y="361" width="280" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Meal Text">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HoeflerText-Italic"/>
+                                            <font key="NSOriginalFont" size="17" name="HoeflerText-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwv-h2-Bx4">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwv-h2-Bx4">
                                 <rect key="frame" x="20" y="80" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="HoeflerText-Black"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -107,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zD-nn-yRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="880" y="454"/>
+            <point key="canvasLocation" x="1356" y="85"/>
         </scene>
         <!--ObcHYC View Controller-->
         <scene sceneID="tBl-Le-cbk">
@@ -118,40 +202,68 @@
                         <viewControllerLayoutGuide type="bottom" id="xT4-Ud-mGW"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HGZ-xu-1Ta">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Placeholder Text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="177" translatesAutoresizingMaskIntoConstraints="NO" id="XgF-JZ-zrI">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="177" translatesAutoresizingMaskIntoConstraints="NO" id="XgF-JZ-zrI">
                                 <rect key="frame" x="72" y="146" width="177" height="212"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Placeholder Text">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HoeflerText-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="HoeflerText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZP-6O-uX1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vZP-6O-uX1">
                                 <rect key="frame" x="72" y="427" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Yes">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Yes">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="HoeflerText-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="yesPressed" destination="772-PP-xdd" eventType="touchUpInside" id="Pn3-gl-g9t"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77Q-pt-znv">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="77Q-pt-znv">
                                 <rect key="frame" x="177" y="427" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="No">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="No">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="HoeflerText-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="noPressed" destination="772-PP-xdd" eventType="touchUpInside" id="rm2-V1-dpH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Have you considered..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYx-zK-cwQ">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DYx-zK-cwQ">
                                 <rect key="frame" x="72" y="117" width="177" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Have you considered...">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="17" name="HoeflerText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -185,12 +297,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOx-Zn-9oa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-98" y="85"/>
+            <point key="canvasLocation" x="-102" y="41"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
 </document>
