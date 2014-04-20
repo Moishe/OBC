@@ -14,7 +14,6 @@
 		85887C051902E9BF000710FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85887C041902E9BF000710FA /* main.m */; };
 		85887C091902E9BF000710FA /* obcAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85887C081902E9BF000710FA /* obcAppDelegate.m */; };
 		85887C0C1902E9BF000710FA /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85887C0A1902E9BF000710FA /* Main_iPhone.storyboard */; };
-		85887C0F1902E9BF000710FA /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85887C0D1902E9BF000710FA /* Main_iPad.storyboard */; };
 		85887C121902E9BF000710FA /* obcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85887C111902E9BF000710FA /* obcViewController.m */; };
 		85887C141902E9BF000710FA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85887C131902E9BF000710FA /* Images.xcassets */; };
 		85887C1B1902E9BF000710FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85887C1A1902E9BF000710FA /* XCTest.framework */; };
@@ -67,7 +66,6 @@
 		85887C071902E9BF000710FA /* obcAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = obcAppDelegate.h; sourceTree = "<group>"; };
 		85887C081902E9BF000710FA /* obcAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = obcAppDelegate.m; sourceTree = "<group>"; };
 		85887C0B1902E9BF000710FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		85887C0E1902E9BF000710FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		85887C101902E9BF000710FA /* obcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = obcViewController.h; sourceTree = "<group>"; };
 		85887C111902E9BF000710FA /* obcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = obcViewController.m; sourceTree = "<group>"; };
 		85887C131902E9BF000710FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 				85887C071902E9BF000710FA /* obcAppDelegate.h */,
 				85887C081902E9BF000710FA /* obcAppDelegate.m */,
 				85887C0A1902E9BF000710FA /* Main_iPhone.storyboard */,
-				85887C0D1902E9BF000710FA /* Main_iPad.storyboard */,
 				85887C101902E9BF000710FA /* obcViewController.h */,
 				85887C111902E9BF000710FA /* obcViewController.m */,
 				85887C131902E9BF000710FA /* Images.xcassets */,
@@ -304,7 +301,6 @@
 				85BA1B3819042D02005C2541 /* 4.png in Resources */,
 				85BA1B3919042D02005C2541 /* 5.png in Resources */,
 				85BA1B3B19042D02005C2541 /* 7.png in Resources */,
-				85887C0F1902E9BF000710FA /* Main_iPad.storyboard in Resources */,
 				85BA1B3E19042D02005C2541 /* 10.png in Resources */,
 				85887C141902E9BF000710FA /* Images.xcassets in Resources */,
 				85BA1B3619042D02005C2541 /* 2.png in Resources */,
@@ -381,14 +377,6 @@
 				85887C0B1902E9BF000710FA /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		85887C0D1902E9BF000710FA /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				85887C0E1902E9BF000710FA /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		85887C231902E9BF000710FA /* InfoPlist.strings */ = {
@@ -483,6 +471,7 @@
 				GCC_PREFIX_HEADER = "Oblique Cooking/Oblique Cooking-Prefix.pch";
 				INFOPLIST_FILE = "Oblique Cooking/Oblique Cooking-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -496,6 +485,7 @@
 				GCC_PREFIX_HEADER = "Oblique Cooking/Oblique Cooking-Prefix.pch";
 				INFOPLIST_FILE = "Oblique Cooking/Oblique Cooking-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
