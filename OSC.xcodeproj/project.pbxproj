@@ -55,23 +55,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		85887BF51902E9BF000710FA /* Oblique Cooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Oblique Cooking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85887BF51902E9BF000710FA /* OSC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85887BF81902E9BF000710FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		85887BFA1902E9BF000710FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		85887BFC1902E9BF000710FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		85887C001902E9BF000710FA /* Oblique Cooking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Oblique Cooking-Info.plist"; sourceTree = "<group>"; };
+		85887C001902E9BF000710FA /* OSC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSC-Info.plist"; sourceTree = "<group>"; };
 		85887C021902E9BF000710FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85887C041902E9BF000710FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		85887C061902E9BF000710FA /* Oblique Cooking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Oblique Cooking-Prefix.pch"; sourceTree = "<group>"; };
+		85887C061902E9BF000710FA /* OSC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSC-Prefix.pch"; sourceTree = "<group>"; };
 		85887C071902E9BF000710FA /* obcAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = obcAppDelegate.h; sourceTree = "<group>"; };
 		85887C081902E9BF000710FA /* obcAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = obcAppDelegate.m; sourceTree = "<group>"; };
 		85887C0B1902E9BF000710FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		85887C101902E9BF000710FA /* obcViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = obcViewController.h; sourceTree = "<group>"; };
 		85887C111902E9BF000710FA /* obcViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = obcViewController.m; sourceTree = "<group>"; };
 		85887C131902E9BF000710FA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		85887C191902E9BF000710FA /* Oblique CookingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Oblique CookingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85887C191902E9BF000710FA /* OSCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85887C1A1902E9BF000710FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		85887C221902E9BF000710FA /* Oblique CookingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Oblique CookingTests-Info.plist"; sourceTree = "<group>"; };
+		85887C221902E9BF000710FA /* OSCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSCTests-Info.plist"; sourceTree = "<group>"; };
 		85887C241902E9BF000710FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		85887C261902E9BF000710FA /* Oblique_CookingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Oblique_CookingTests.m; sourceTree = "<group>"; };
 		85887C331902EF14000710FA /* obcHYCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obcHYCViewController.h; sourceTree = "<group>"; };
@@ -136,8 +136,8 @@
 		85887BF61902E9BF000710FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				85887BF51902E9BF000710FA /* Oblique Cooking.app */,
-				85887C191902E9BF000710FA /* Oblique CookingTests.xctest */,
+				85887BF51902E9BF000710FA /* OSC.app */,
+				85887C191902E9BF000710FA /* OSCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,10 +193,10 @@
 				85BA1B4519044CCA005C2541 /* 17.png */,
 				85BA1B4619044CCA005C2541 /* 18.png */,
 				85BA1B0819042776005C2541 /* title.png */,
-				85887C001902E9BF000710FA /* Oblique Cooking-Info.plist */,
+				85887C001902E9BF000710FA /* OSC-Info.plist */,
 				85887C011902E9BF000710FA /* InfoPlist.strings */,
 				85887C041902E9BF000710FA /* main.m */,
-				85887C061902E9BF000710FA /* Oblique Cooking-Prefix.pch */,
+				85887C061902E9BF000710FA /* OSC-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,7 +213,7 @@
 		85887C211902E9BF000710FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				85887C221902E9BF000710FA /* Oblique CookingTests-Info.plist */,
+				85887C221902E9BF000710FA /* OSCTests-Info.plist */,
 				85887C231902E9BF000710FA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -222,9 +222,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		85887BF41902E9BF000710FA /* Oblique Cooking */ = {
+		85887BF41902E9BF000710FA /* OSC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85887C2A1902E9BF000710FA /* Build configuration list for PBXNativeTarget "Oblique Cooking" */;
+			buildConfigurationList = 85887C2A1902E9BF000710FA /* Build configuration list for PBXNativeTarget "OSC" */;
 			buildPhases = (
 				85887BF11902E9BF000710FA /* Sources */,
 				85887BF21902E9BF000710FA /* Frameworks */,
@@ -234,14 +234,14 @@
 			);
 			dependencies = (
 			);
-			name = "Oblique Cooking";
+			name = OSC;
 			productName = "Oblique Cooking";
-			productReference = 85887BF51902E9BF000710FA /* Oblique Cooking.app */;
+			productReference = 85887BF51902E9BF000710FA /* OSC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		85887C181902E9BF000710FA /* Oblique CookingTests */ = {
+		85887C181902E9BF000710FA /* OSCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 85887C2D1902E9BF000710FA /* Build configuration list for PBXNativeTarget "Oblique CookingTests" */;
+			buildConfigurationList = 85887C2D1902E9BF000710FA /* Build configuration list for PBXNativeTarget "OSCTests" */;
 			buildPhases = (
 				85887C151902E9BF000710FA /* Sources */,
 				85887C161902E9BF000710FA /* Frameworks */,
@@ -252,9 +252,9 @@
 			dependencies = (
 				85887C1F1902E9BF000710FA /* PBXTargetDependency */,
 			);
-			name = "Oblique CookingTests";
+			name = OSCTests;
 			productName = "Oblique CookingTests";
-			productReference = 85887C191902E9BF000710FA /* Oblique CookingTests.xctest */;
+			productReference = 85887C191902E9BF000710FA /* OSCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -272,7 +272,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 85887BF01902E9BF000710FA /* Build configuration list for PBXProject "Oblique Cooking" */;
+			buildConfigurationList = 85887BF01902E9BF000710FA /* Build configuration list for PBXProject "OSC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -285,8 +285,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85887BF41902E9BF000710FA /* Oblique Cooking */,
-				85887C181902E9BF000710FA /* Oblique CookingTests */,
+				85887BF41902E9BF000710FA /* OSC */,
+				85887C181902E9BF000710FA /* OSCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,7 +357,7 @@
 /* Begin PBXTargetDependency section */
 		85887C1F1902E9BF000710FA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 85887BF41902E9BF000710FA /* Oblique Cooking */;
+			target = 85887BF41902E9BF000710FA /* OSC */;
 			targetProxy = 85887C1E1902E9BF000710FA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -468,9 +468,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Oblique Cooking/Oblique Cooking-Prefix.pch";
-				INFOPLIST_FILE = "Oblique Cooking/Oblique Cooking-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Oblique Cooking/OSC-Prefix.pch";
+				INFOPLIST_FILE = "Oblique Cooking/OSC-Info.plist";
+				PRODUCT_NAME = OSC;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -482,9 +482,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Oblique Cooking/Oblique Cooking-Prefix.pch";
-				INFOPLIST_FILE = "Oblique Cooking/Oblique Cooking-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Oblique Cooking/OSC-Prefix.pch";
+				INFOPLIST_FILE = "Oblique Cooking/OSC-Info.plist";
+				PRODUCT_NAME = OSC;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -505,8 +505,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Oblique CookingTests/Oblique CookingTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Oblique CookingTests/OSCTests-Info.plist";
+				PRODUCT_NAME = OSCTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -523,8 +523,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Oblique Cooking/Oblique Cooking-Prefix.pch";
-				INFOPLIST_FILE = "Oblique CookingTests/Oblique CookingTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "Oblique CookingTests/OSCTests-Info.plist";
+				PRODUCT_NAME = OSCTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -533,7 +533,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		85887BF01902E9BF000710FA /* Build configuration list for PBXProject "Oblique Cooking" */ = {
+		85887BF01902E9BF000710FA /* Build configuration list for PBXProject "OSC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85887C281902E9BF000710FA /* Debug */,
@@ -542,7 +542,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85887C2A1902E9BF000710FA /* Build configuration list for PBXNativeTarget "Oblique Cooking" */ = {
+		85887C2A1902E9BF000710FA /* Build configuration list for PBXNativeTarget "OSC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85887C2B1902E9BF000710FA /* Debug */,
@@ -551,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		85887C2D1902E9BF000710FA /* Build configuration list for PBXNativeTarget "Oblique CookingTests" */ = {
+		85887C2D1902E9BF000710FA /* Build configuration list for PBXNativeTarget "OSCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				85887C2E1902E9BF000710FA /* Debug */,

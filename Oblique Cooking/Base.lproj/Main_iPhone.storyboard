@@ -66,21 +66,10 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="x1D-HN-StH">
-                                <rect key="frame" x="20" y="518" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="x1D-HN-StH">
+                                <rect key="frame" x="273" y="526" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.2828882533" green="0.2818977365" blue="0.3774414062" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Credits">
-                                            <attributes>
-                                                <font key="NSFont" size="11" name="HoeflerText-Regular"/>
-                                                <font key="NSOriginalFont" size="11" name="HoeflerText-Regular"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="right" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
                                 <connections>
                                     <segue destination="1bo-m3-knh" kind="push" id="3Xb-tB-95U"/>
                                 </connections>
@@ -106,14 +95,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="G9J-az-la5">
-                                <rect key="frame" x="20" y="66" width="280" height="394"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rfq-nr-dQM">
+                                <rect key="frame" x="20" y="70" width="280" height="478"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Label">
+                                    <fragment>
+                                        <string key="content">Obliquely Strategic Cooking is a tribute to Oblique Strategies, the brilliant deck of cards created by Brian Eno and Peter Schmidt (and available at </string>
                                         <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name="HoeflerText-Regular"/>
+                                            <font key="NSFont" size="13" name="HoeflerText-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="www.enoshop.co.uk/shop/oblique-strategies">
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HoeflerText-Regular"/>
+                                            <url key="NSLink" string="http://www.enoshop.co.uk/shop/oblique-strategies"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">). It is inspired by our love of food, zen koans, detective stories, bicycles, coffee (which is a type of food), and serendipity. 
+
+Obliquely Strategic Cooking emerged out of an evening spent in Xplane's Visual Thinking School, followed by several mornings in Portland, Oregon, and a weekend in Boulder, Colorado when we probably should have been outside fishing. We hope you enjoy it. 
+
+© 2014 Moishe Lettvin, Eric S. Meltzer, and/or Strategy + Electric.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="13" name="HoeflerText-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                         </attributes>
                                     </fragment>
@@ -194,6 +201,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="vZP-6O-uX1">
                                 <rect key="frame" x="72" y="427" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.2828882533" green="0.2818977365" blue="0.3774414062" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Yes">
@@ -210,6 +218,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="77Q-pt-znv">
                                 <rect key="frame" x="177" y="427" width="72" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.2828882533" green="0.2818977365" blue="0.3774414062" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="No">

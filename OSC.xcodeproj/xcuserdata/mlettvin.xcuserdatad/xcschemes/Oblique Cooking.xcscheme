@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "85887BF41902E9BF000710FA"
                BuildableName = "Oblique Cooking.app"
-               BlueprintName = "Oblique Cooking"
-               ReferencedContainer = "container:Oblique Cooking.xcodeproj">
+               BlueprintName = "OSC"
+               ReferencedContainer = "container:OSC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "85887C181902E9BF000710FA"
                BuildableName = "Oblique CookingTests.xctest"
-               BlueprintName = "Oblique CookingTests"
-               ReferencedContainer = "container:Oblique Cooking.xcodeproj">
+               BlueprintName = "OSCTests"
+               ReferencedContainer = "container:OSC.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "85887BF41902E9BF000710FA"
             BuildableName = "Oblique Cooking.app"
-            BlueprintName = "Oblique Cooking"
-            ReferencedContainer = "container:Oblique Cooking.xcodeproj">
+            BlueprintName = "OSC"
+            ReferencedContainer = "container:OSC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "85887BF41902E9BF000710FA"
             BuildableName = "Oblique Cooking.app"
-            BlueprintName = "Oblique Cooking"
-            ReferencedContainer = "container:Oblique Cooking.xcodeproj">
+            BlueprintName = "OSC"
+            ReferencedContainer = "container:OSC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "85887BF41902E9BF000710FA"
             BuildableName = "Oblique Cooking.app"
-            BlueprintName = "Oblique Cooking"
-            ReferencedContainer = "container:Oblique Cooking.xcodeproj">
+            BlueprintName = "OSC"
+            ReferencedContainer = "container:OSC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

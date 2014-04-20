@@ -30,7 +30,17 @@
 	// Do any additional setup after loading the view, typically from a nib.
     labelConsideration.alpha = 0;
     
+    [self positionAtBottom:buttonYes];
+    [self positionAtBottom:buttonNo];
+
     [self fadeIn];
+}
+
+- (void)positionAtBottom:(UIButton *)button {
+    CGFloat margin = 25;
+    CGRect buttonFrame = button.frame;
+    buttonFrame.origin.y = self.view.bounds.size.height - buttonFrame.size.height - margin;
+    button.frame = buttonFrame;
 }
 
 - (void)didReceiveMemoryWarning

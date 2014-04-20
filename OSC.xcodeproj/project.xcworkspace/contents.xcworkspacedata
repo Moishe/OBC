@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Oblique Cooking.xcodeproj">
+      location = "self:OSC.xcodeproj">
    </FileRef>
 </Workspace>
