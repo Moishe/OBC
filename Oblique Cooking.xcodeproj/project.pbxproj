@@ -491,6 +491,7 @@
 				85887C2C1902E9BF000710FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85887C2D1902E9BF000710FA /* Build configuration list for PBXNativeTarget "Oblique CookingTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				85887C2F1902E9BF000710FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

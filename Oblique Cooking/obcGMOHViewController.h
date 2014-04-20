@@ -14,4 +14,6 @@
     IBOutlet UIImageView *imageView;
 }
 
+@property (assign, nonatomic) NSInteger index;
+
 @end
