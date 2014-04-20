@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Oblique Cooking/obcGMOHViewController.m"
-            timestampString = "419651770.872386"
+            timestampString = "419714508.314549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "490"
+            endingLineNumber = "490"
+            landmarkName = "-maskBtnDidClick:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,12 +42,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Oblique Cooking/obcGMOHViewController.m"
-            timestampString = "419652331.698343"
+            timestampString = "419714508.314549"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "484"
+            endingLineNumber = "484"
+            landmarkName = "-placeLabel:rect:labelText:fontName:bottom:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Oblique Cooking/obcGMOHViewController.m"
+            timestampString = "419714508.314549"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "447"
+            endingLineNumber = "447"
+            landmarkName = "-showMeal"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

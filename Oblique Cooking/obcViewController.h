@@ -10,6 +10,7 @@
 
 @interface obcViewController : UIViewController {
     IBOutlet UIImageView *imageView;
+    IBOutlet UIButton *credits;
 }
 
 @end

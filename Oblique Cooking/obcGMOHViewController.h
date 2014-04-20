@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface obcGMOHViewController : UIViewController {
-    IBOutlet UILabel *labelMealList;
+    UILabel *labelDescription;
+    UILabel *labelMealList;
     IBOutlet UILabel *labelDate;
     IBOutlet UIImageView *imageView;
     
-    NSInteger index;
+    // For debugging
+    NSInteger pictureIndex;
+    NSInteger mealIndex;
 }
 
 - (void)placeLabel:(CGRect *)rect labelText:(NSString *)labelText bottom:(BOOL)bottom;

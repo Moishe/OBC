@@ -27,20 +27,19 @@
 {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view.
-    labelMealList.textAlignment = NSTextAlignmentCenter;
-    labelMealList.lineBreakMode = NSLineBreakByWordWrapping;
-    labelMealList.numberOfLines = 0;
+    CGRect labelFrame = CGRectMake(25, 109, 270, 140);
+    labelDescription = [[UILabel alloc] initWithFrame:labelFrame];
+    labelMealList = [[UILabel alloc] initWithFrame:labelFrame];
     
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"vegas"] ofType:@"jpg"];
-    UIImage *image = [UIImage imageWithContentsOfFile:filePath];
-    imageView.alpha = 0.4;
-    imageView.backgroundColor = [UIColor blackColor];
+    mealIndex = 0;
+    pictureIndex = 0;
+    
+    imageView.alpha = 0.33;
+    CGRect imageFrame = imageView.frame;
+    imageFrame.size.height = MIN(self.view.bounds.size.height - 80, imageFrame.size.height);
+    imageView.frame = imageFrame;
     imageView.clipsToBounds = YES;
-    imageView.image = image;
-    
-    self.index = 0;
-    
+
     [self showMeal];
 }
 
@@ -56,6 +55,13 @@
 
 - (void)showMeal
 {
+    NSUInteger randomIndex = 0; //(arc4random() % 18) + 1;
+    randomIndex = pictureIndex++ % 18 + 1;
+    NSString *name = [NSString stringWithFormat:@"%lu", (unsigned long)randomIndex];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:name ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:filePath];
+    imageView.image = image;
+    
     NSArray *mealDescriptions = @[
                                   @"Eli Terry takes a long walk through Northbury, Connecticut, naps, invents a clock that can discern the difference between apparent solar time and mean solar time (ephemeris time was not yet clear until 150 years later and so would not have been helpful in this clock), and enjoys a treat.",
                                   @"Buffet lunch, as enjoyed by Paul Morphy, during the third and most acrimonious day at the American Chess Organization's First American Chess Congress.",
@@ -434,20 +440,20 @@
                            @"Fried artichoke hearts, sweet and sour rice, ginger carrot soup"
                            ];
     
-    NSUInteger randomIndex = arc4random() % [mealDescriptions count];
+    //randomIndex = arc4random() % [mealDescriptions count];
+    randomIndex = mealIndex++ % [mealDescriptions count];
+    NSString *labelText = [mealDescriptions objectAtIndex:randomIndex];
     
     CGRect labelFrame = CGRectMake(25, 109, 270, 140);
-    NSString *labelText = [mealDescriptions objectAtIndex:randomIndex];
-    [self placeLabel:&labelFrame labelText:labelText fontName:@"HoeflerText-Regular" bottom:false];
+    [self placeLabel:labelDescription rect:&labelFrame labelText:labelText fontName:@"HoeflerText-Regular" bottom:false];
     
     labelDate.text = [dates objectAtIndex:randomIndex];
     
-    [self placeLabel:&labelFrame labelText:[mealLists objectAtIndex:randomIndex] fontName:@"HoeflerText-Italic" bottom:true];
+    [self placeLabel:labelMealList rect:&labelFrame labelText:[mealLists objectAtIndex:randomIndex] fontName:@"HoeflerText-Italic" bottom:true];
 }
 
-- (void)placeLabel:(CGRect *)rect labelText:(NSString *)labelText fontName:(NSString *)fontName bottom:(BOOL)bottom {
-    UILabel *labelDescription = [[UILabel alloc] initWithFrame:*rect];
-    [labelDescription setFont:[UIFont fontWithName:fontName size:15.0f]];
+- (void)placeLabel:(UILabel*)label rect:(CGRect *)rect labelText:(NSString *)labelText fontName:(NSString *)fontName bottom:(BOOL)bottom {
+    [label setFont:[UIFont fontWithName:fontName size:15.0f]];
     NSInteger strLength = [labelText length];
     NSMutableParagraphStyle *style = [[NSMutableParagraphStyle alloc] init];
     [style setLineSpacing:4];
@@ -455,26 +461,34 @@
     [descriptionString addAttribute:NSParagraphStyleAttributeName
                               value:style
                               range:NSMakeRange(0, strLength)];
-    [labelDescription setAttributedText:descriptionString];
+    [label setAttributedText:descriptionString];
     
     // Tell the label to use an unlimited number of lines
-    labelDescription.textAlignment = UITextAlignmentCenter;
-    [labelDescription setNumberOfLines:0];
-    [labelDescription sizeToFit];
-    CGRect myFrame = labelDescription.frame;
+    label.textAlignment = UITextAlignmentCenter;
+    [label setNumberOfLines:0];
+    [label sizeToFit];
+    CGRect myFrame = label.frame;
     myFrame = CGRectMake(myFrame.origin.x, myFrame.origin.y, 270, myFrame.size.height);
-    labelDescription.frame = myFrame;
-    [self.view addSubview:labelDescription];
+    label.frame = myFrame;
+    [self.view addSubview:label];
     
     if (bottom) {
-        CGFloat margin = 25;
-        CGRect buttonFrame = labelDescription.frame;
+        CGFloat margin = 30;
+        CGRect buttonFrame = label.frame;
         buttonFrame.origin.y = self.view.bounds.size.height - buttonFrame.size.height - margin;
-        labelDescription.frame = buttonFrame;
+        label.frame = buttonFrame;
     }
 
+    UIButton *maskBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    maskBtn.frame = self.view.bounds;
+//    maskBtn.backgroundColor = [UIColor redColor];
+    [maskBtn addTarget:self action:@selector(maskBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:maskBtn];
 }
 
+-(void)maskBtnDidClick:(UIButton *)sender{
+    [self showMeal];
+}
 /*
 #pragma mark - Navigation
 

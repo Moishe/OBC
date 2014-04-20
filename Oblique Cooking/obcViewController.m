@@ -19,12 +19,19 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"vegas"] ofType:@"jpg"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"2"] ofType:@"png"];
     UIImage *image = [UIImage imageWithContentsOfFile:filePath];
     imageView.alpha = 0.4;
-    imageView.backgroundColor = [UIColor blackColor];
+    CGRect imageFrame = imageView.frame;
+    imageFrame.size.height = MIN(self.view.bounds.size.height - 80, imageFrame.size.height);
+    imageView.frame = imageFrame;
     imageView.clipsToBounds = YES;
     imageView.image = image;
+
+    CGFloat margin = 25;
+    CGRect buttonFrame = credits.frame;
+    buttonFrame.origin.y = self.view.bounds.size.height - buttonFrame.size.height - margin;
+    credits.frame = buttonFrame;
 }
 
 - (void)didReceiveMemoryWarning
